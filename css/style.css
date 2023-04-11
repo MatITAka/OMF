@@ -1,3 +1,28 @@
+body{
+   margin:0;
+   display: flex;
+   justify-content: center;
+
+}
+
+.main-conteneur{
+   width: 100%;
+   
+   
+   
+}
+
+h2{
+  
+   
+}
+
+
+
+
+
+
+
 .logo{
     
    display: flex;
@@ -28,13 +53,12 @@ header img{
    font-weight: 300;
 }
 
-.phrase-menu h1{
+.phrase-menu h2{
 
-   font-family: 'Roboto';
-   font-style: normal;
+   font-family:'Roboto';
+   font-size: 24px;
    
    
-   color: #000000;
  } 
 
 .phrase-menu p{
@@ -43,6 +67,7 @@ header img{
    font-style: normal;
    font-size: 18px;
    color: #353535;
+   margin-top:-10px;
 
 } 
 
@@ -62,20 +87,27 @@ header img{
    padding: 15px;
    height: 50px;
    width: 180px;
-   border-color:white;
-   border-width: 1px;
+   border: 1px #9356DC;
    font-family: "Roboto";
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-
-
+   
    
 }
 
 .button{
 
    display: flex;
-   justify-content: center;
+   justify-content:center;
+   font-weight: 800;
 }
+
+.button a{
+   color: white;
+   text-decoration: none;
+   
+}
+
+
 
 .fonctionnement{
 
@@ -87,47 +119,77 @@ header img{
 .fonctionnement button{
    height: 50px;
    border-radius: 20px;
-   border-color: #F6F6F6;
-   border-width: 1px;
+   border: 1px white;
    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+   display: flex; 
+   gap:25px;
+   align-items: center;
+   padding-left: 30px;
 }
 
-.Restaurants{
+.Restaurants{ 
    
    background-color:#F6F6F6;
    
-   padding-bottom: 400px;
-}
+   
+   padding-bottom: 30px;
+   padding-top: 30px;
+   margin-top: 50px;
+   }
 
 .restaurants-cards{
    display: flex;
    justify-content: center;
    flex-direction: column;
    padding-left: 10px;
+   gap: 25px;
 }
 
+
+   
+  
 
 .card{
 
-   width: 350px;
-   height: 350px;
+   width: 290px;
+   height: 250px;
    border-radius: 15px;
-   border: 1px solid white;
+   border: 1px solid #F6F6F6;
    background-color:#FFFFFF;
+   margin-left: 5px;
 }
 
 .card img{
-   width: 350px;
-   height: 231px;
+   width: 290px;
+   height: 190px;
    border-top-left-radius: 15px;
    border-top-right-radius:15px;
    object-fit: cover;
 }
 
+.card a{
+   color: black;
+   text-decoration: none;
+}
+
+.card-content{
+   padding-left: 10px;
+}
+
+.card p{
+   margin-top: -10px;
+}
+
+.card h3{
+
+  margin-top: 5px;
+}
+
 footer{
 
-   background-color: black;
+   background-color:#353535 ;
    padding-left: 20px;
+   padding-bottom: 20px;
 }
 
 footer p{
