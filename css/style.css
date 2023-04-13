@@ -1,5 +1,5 @@
 body{
-   margin:10px;
+   margin: 0;
    display: flex;
    justify-content: center;
 
@@ -20,6 +20,7 @@ body{
     
    display: flex;
    justify-content: center;
+   padding: 10px 0;
    
 }
 
@@ -85,18 +86,23 @@ header img{
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
    
    
+   
 }
 
 .button{
 
    display: flex;
    justify-content:center;
-   font-weight: 800;
+   padding-bottom: 20px;
 }
 
 .button a{
    color: white;
    text-decoration: none;
+   font-weight: 500;
+   font-family: 'Roboto';
+   font-size: 14px;
+   
    
 }
 
@@ -129,10 +135,8 @@ button p{
    gap: 20px;
 }
 
-.fonctionnement :hover{
-   
-  color: #9356DC;
-}
+
+  
 
 
 
@@ -146,7 +150,7 @@ button p{
    gap:25px;
    align-items: center;
    padding-left: 30px;
-   width:100%;
+   width:95%;
 }
 
 .Restaurants{ 
@@ -170,7 +174,10 @@ button p{
 .icon{
    display: flex;
    justify-content:flex-end; 
-   align-items: flex-start;
+   margin-top: -50px;
+   margin-right: 20px;
+   font-size:20px;
+   
 }
 
 
@@ -180,7 +187,7 @@ button p{
 .card{
 
    width: 100%;
-   height: 250px;
+   height: 260px;
    border-radius: 15px;
    border: 1px solid #F6F6F6;
    background-color:#FFFFFF;
