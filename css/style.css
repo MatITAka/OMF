@@ -2,7 +2,7 @@ body{
    margin: 0;
    display: flex;
    justify-content: center;
-   
+   font-family:'roboto';
 
 }
 
@@ -167,7 +167,13 @@ button p{
    padding-bottom: 30px;
    padding-top: 30px;
    margin-top: 50px;
-   }
+}
+
+.Restaurants h2{
+   margin-left: 20px;
+}
+
+
 
 .restaurants-cards{
    display: flex;
@@ -198,13 +204,7 @@ button p{
    
 
 
-.icon2 .fa-regular{
 
-   
-   
-   
-
-}
 
 .rectangle-flex{
 
@@ -236,7 +236,7 @@ button p{
 
 .card{
 
-   width: 100%;
+   width: 90%;
    height: 260px;
    border-radius: 15px;
    border: 1px solid #F6F6F6;
@@ -263,14 +263,14 @@ button p{
 
 .card p{
    margin-top: -10px;
-   font-family: 'Roboto', sans-serif;
+   
    font-weight: 100;
 }
 
 .card h3{
 
   margin-top: 5px;
-  font-family: 'Roboto', sans-serif;
+  
 }
 
 footer{
@@ -278,7 +278,7 @@ footer{
    background-color:#353535 ;
    padding-left: 20px;
    padding-bottom: 20px;
-   font-family: 'Roboto', sans-serif;
+   
 }
 
 footer p{
@@ -291,4 +291,49 @@ footer img{
    filter: invert(1);
    width: 80px;
    padding-top: 20px;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 1440px) {
+
+
+   .fonctionnement{
+      flex-direction: row;
+   }
+
+   .restaurants-cards{
+      flex-direction: row;
+      gap:80px;
+      flex-wrap: wrap;
+      
+      
+   }
+
+   .restaurants-cards .card{
+      width: 45%;
+   }
+
+   footer{
+      
+      display: flex;
+      
+      justify-content: flex-end;
+   }
+   
+   .footer-media{
+      display: flex;
+      
+      gap: 40px;
+      
+   }
+
+   .footer-media img{
+      order: 5;
+      height: 20px;
+      margin-right: 10px;
+   }
+
 }
