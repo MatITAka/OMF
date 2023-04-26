@@ -293,11 +293,23 @@ footer img{
    padding-top: 20px;
 }
 
+.footer-icon{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-bottom: -20px;
+   
+}
+
+.fa-utensils , .fa-handshake-angle{
+
+   margin-right: 10px;
+}
 
 
 /* Media Queries */
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
 
 
    .fonctionnement{

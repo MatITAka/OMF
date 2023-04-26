@@ -2,6 +2,7 @@
 body{
     margin:0;
     font-family: 'Roboto';
+    
 }
 
 h1{
@@ -109,6 +110,7 @@ article a{
     display: flex;
     justify-content: flex-end;
     margin-top: -20px;
+    padding-right: 100px;
 }
 
 .bar{
@@ -117,6 +119,34 @@ article a{
     margin-left: 10px;
     
 }
+
+.check-icon{
+
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    
+    
+    
+    
+}
+
+.check-icon .fa-circle-check{
+    border: 1px solid #99E2D0;
+    background-color: #99E2D0;
+    width: 8%;
+    height: 100px;
+    margin-top: -93px;
+    
+    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    
+
+}
+
+
 
 .button{
     display: flex;
@@ -162,10 +192,23 @@ footer p{
     padding-top: 20px;
  }
 
+ .footer-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: -20px;
+    
+ }
+ 
+ .fa-utensils , .fa-handshake-angle{
+ 
+   
+ }
+
 
  /* media queries */
 
- @media (max-width : 1440px){
+ @media (min-width : 1440px){
 
     .main-conteneur h1{
 
