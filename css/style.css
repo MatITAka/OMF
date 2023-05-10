@@ -6,6 +6,56 @@ body {
 
 }
 
+.loader{
+   /* overflow: hidden;
+   position:fixed;
+   width:100vw;
+   height:100vh;
+   z-index: 1000;
+  
+   background-color: #0fa5a2;
+   
+    */
+animation: fadeOut 8s;
+
+}
+
+
+
+.Oh,.My,.Food{
+   font-family: Shrikhand;
+}
+
+.Oh{
+   color: #9356DC;
+   animation: fadeOut 2s infinite;
+   
+   
+}
+
+.My{
+   color: #FF79DA;
+   animation: fadeOut 4s infinite;
+   
+}
+
+.Food{
+   color:#99E2D0;
+   animation: fadeOut 6s infinite;
+   
+   
+}
+
+@keyframes fadeOut{
+   0%{
+      opacity:0;
+   }
+   100%{
+      opacity:1;
+   }
+}
+
+
 button {
    font-family:'roboto';
 }
@@ -175,6 +225,14 @@ button p{
    
 }
 
+button i:hover{
+   color: #9356DC;
+}
+
+.fonctionnement_btns i{
+   color:#7a7a7a;
+}
+
 .Restaurants{ 
    
    background-color:#F6F6F6;
@@ -216,9 +274,12 @@ button p{
    
 .icon2 :hover{
 
-   
-   color:#FFFFFF;
    background: linear-gradient(#9356DC,#FF79DA );
+   font-weight: 700;
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   transform: scale(1.1);
 }
 
 
@@ -299,6 +360,11 @@ footer{
    
 }
 
+footer a{
+   text-decoration: none;
+   color: white;
+}
+
 footer p{
 
    color: white;
@@ -323,6 +389,8 @@ footer img{
 
    margin-right: 10px;
 }
+
+
 
 
 /* Media Queries */

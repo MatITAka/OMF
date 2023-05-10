@@ -4,6 +4,27 @@ body{
     
 }
 
+.loader{
+    animation:fadeOut 3s;
+}
+
+.carte{
+    animation:fadeOut 6s;
+}
+
+
+
+@keyframes fadeOut{
+    0%{
+       opacity:0;
+    }
+    
+    
+    100%{
+       opacity:1;
+    }
+}
+
 h1{
     font-family: "Shrikhand";
     font-style: italic;
@@ -19,6 +40,24 @@ h1{
     margin-top: -40px;
     margin-bottom: 40px;
     margin-right: 40px;
+}
+
+.icon-fleche{
+   position:absolute;
+   left: 20px;
+   
+    
+}
+
+
+.icon-heart i:active{
+
+   background: linear-gradient(#9356DC,#FF79DA );
+   font-weight: 700;
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   
 }
 
 .flex-header{
@@ -137,8 +176,10 @@ text-overflow: ellipsis;
 
 .bar{
     border-bottom: 3px #99E2D0 solid;
-    width:60px;
+    width:40px;
     margin-left: 10px;
+    font-weight: 200;
+    font-size: medium;
     
 }
 
@@ -148,24 +189,31 @@ text-overflow: ellipsis;
     justify-content: center;
     align-items: center;
     
-    border: 1px solid #99E2D0;
+    
     background-color: #99E2D0;
-    width: 100px;
+    width: 0;
+    overflow: hidden;
     
     
     
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    transition:0.5s ease-in-out;
+}
     
+
+
+article:hover .check-icon{
+    width: 100px;
     
 }
-
 .check-icon .fa-circle-check{
    
 color:#fff;
     
 
 }
+
 
 
     
@@ -213,6 +261,7 @@ footer{
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
+   
 }
 
 footer p{
