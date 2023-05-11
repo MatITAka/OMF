@@ -7,16 +7,19 @@ body {
 }
 
 .loader{
-   /* overflow: hidden;
-   position:fixed;
-   width:100vw;
-   height:100vh;
-   z-index: 1000;
-  
-   background-color: #0fa5a2;
+
+   width: 100%;
+   height: 100%;    
+   position: fixed;
+   gap:10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+   background-color: #fff;
    
-    */
-animation: fadeOut 8s;
+   
+   animation: fadeOut 5s ease-in-out normal forwards;
 
 }
 
@@ -24,36 +27,53 @@ animation: fadeOut 8s;
 
 .Oh,.My,.Food{
    font-family: Shrikhand;
+   font-size: 3em;
 }
 
 .Oh{
    color: #9356DC;
-   animation: fadeOut 2s infinite;
+   animation: slideDown ease-in-out 1s ; 
    
    
 }
 
 .My{
    color: #FF79DA;
-   animation: fadeOut 4s infinite;
+   animation: slideDown 2s ; 
    
 }
 
 .Food{
    color:#99E2D0;
-   animation: fadeOut 6s infinite;
+   animation: slideDown 3s;
+   
    
    
 }
 
 @keyframes fadeOut{
    0%{
-      opacity:0;
-   }
-   100%{
       opacity:1;
    }
+   100%{
+      visibility: hidden;
+      opacity:0;
+   }
 }
+
+@keyframes slideDown{   
+
+    from{
+      transform: translateY(-100px);
+   }
+   to{
+         transform: translateY(0px);
+      }
+
+  
+}
+
+
 
 
 button {
@@ -225,7 +245,7 @@ button p{
    
 }
 
-button i:hover{
+button:hover i{
    color: #9356DC;
 }
 
@@ -385,6 +405,10 @@ footer img{
    
 }
 
+footer i{
+   color:#fff;
+}
+
 .fa-utensils , .fa-handshake-angle{
 
    margin-right: 10px;
@@ -422,7 +446,7 @@ footer img{
 
    .restaurants-cards{
       flex-direction: row;
-      /* gap:80px; */
+      
       flex-wrap: wrap;
       justify-content: space-between;
       
@@ -452,6 +476,37 @@ footer img{
       order: 5;
       height: 20px;
       margin-right: 10px;
+   }
+
+}
+
+@media (min-width :650px) and (max-width : 1024px){
+
+   .fonctionnement_btns{
+      flex-direction: column;
+      gap:20px;
+   }
+
+   footer{
+      
+      display: flex;
+      
+      justify-content: flex-end;
+   }
+   
+   footer{
+      display: flex;
+      
+      gap: 30px;
+      
+      
+   }
+
+   footer img{
+      order: 5;
+      height: 20px;
+      margin-right: 10px;
+      object-fit: fill;
    }
 
 }

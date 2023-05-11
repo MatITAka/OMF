@@ -50,7 +50,7 @@ h1{
 }
 
 
-.icon-heart i:active{
+.icon-heart i:hover{
 
    background: linear-gradient(#9356DC,#FF79DA );
    font-weight: 700;
@@ -59,6 +59,8 @@ h1{
    color: transparent;
    
 }
+
+
 
 .flex-header{
     display: flex;
@@ -264,6 +266,11 @@ footer{
    
 }
 
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
 footer p{
 
     color: white;
@@ -284,16 +291,24 @@ footer p{
     gap: 10px;
     
  }
- 
- .fa-utensils , .fa-handshake-angle{
- 
-   
+
+ footer i{
+    color: #fff;
  }
+ 
+ 
 
 
  /* media queries */
 
  @media (min-width : 1024px){
+
+    .main-conteneur{
+        width: 65%;
+        margin-left: 200px;
+        padding-left: 50px;
+        
+    }
 
     .main-conteneur h1{
 
@@ -303,7 +318,7 @@ footer p{
     }
 
      .icon-heart{
-        margin-right: 450px;
+        margin-right: 25%;
         font-size: 30px;
         margin-top: -55px;
     
@@ -331,4 +346,43 @@ footer p{
         height: 20px;
         margin-right: 10px;
      }
+ }
+
+ @media (min-width :650px) and (max-width : 1024px)
+ {
+     
+    footer{
+      
+        display: flex;
+        
+        justify-content: flex-end;
+     }
+     
+     .footer-media{
+        display: flex;
+        
+        gap: 40px;
+        
+     }
+  
+     .footer-media img{
+        order: 5;
+        height: 20px;
+        margin-right: 10px;
+     }
+
+     .main-conteneur h1{
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .main-conteneur{
+        width: 80%;
+        margin-left: 60px;
+        padding-left: 50px;
+    }
+
+
  }
