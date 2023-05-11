@@ -1,13 +1,10 @@
 body {
-   margin: 0;
-   display: flex;
-   justify-content: center;
-   font-family:'roboto';
+    display: flex;
+    justify-content: center;
+ }
 
-}
 
 .loader{
-
    width: 100%;
    height: 100%;    
    position: fixed;
@@ -15,12 +12,8 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-    
    background-color: #fff;
-   
-   
    animation: fadeOut 5s ease-in-out normal forwards;
-
 }
 
 
@@ -32,23 +25,17 @@ body {
 
 .Oh{
    color: #9356DC;
-   animation: slideDown ease-in-out 1s ; 
-   
-   
+   animation: slideDown ease-in-out 1s ;  
 }
 
 .My{
    color: #FF79DA;
    animation: slideDown 2s ; 
-   
 }
 
 .Food{
    color:#99E2D0;
    animation: slideDown 3s;
-   
-   
-   
 }
 
 @keyframes fadeOut{
@@ -72,40 +59,28 @@ body {
 
   
 }
-
-
-
-
-button {
-   font-family:'roboto';
-}
-
 .main-conteneur{
    width: 100%;
 }
 
 
-
-
-
+                  /* header */
 
 
 .logo{
-    
    display: flex;
    justify-content: center;
    padding: 10px 0;
-   
 }
 
 header img{
-
    width: 162px;
    height: 44px;
 }
 
-.sous-header{
+               /* sous-header */
 
+.sous-header{
    display: flex;
    justify-content: center;
    flex-direction: row;
@@ -113,33 +88,24 @@ header img{
    padding: 0;
    gap:17px;
    background-color: #EAEAEA;
-  
 }
 
 .sous-header p{
-
    font-weight: 300;
 }
 
 
-.phrase-menu h2{
-
-  
+.phrase-menu h2{ 
    font-size: 24px;
    font-weight: 800;
-   
-   
  } 
 
-.phrase-menu p{
-
-   
+.phrase-menu p{ 
    font-style: normal;
    font-size: 18px;
    color: #353535;
    margin-top:-10px;
    font-weight: 300;
-
 } 
 
 .phrase-menu{ 
@@ -151,7 +117,6 @@ header img{
    
 
 .button button{
-
    background: linear-gradient(#9356DC,#FF79DA );
    border-radius: 25px;
    color: white;
@@ -160,17 +125,12 @@ header img{
    width: 180px;
    border: 1px #9356DC;   
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-   
-   
-   
-   
 }
 
 .button :hover {
    opacity: 0.8;
    box-shadow: #353535;
    transform: scale(1.02);
-   
 }
 
 .button{
@@ -184,18 +144,16 @@ header img{
    color: white;
    text-decoration: none;
    font-weight: 500;
-   
-   font-size: 13px;
-   
-   
+   font-size: 13px; 
 }
+
+         /* Fonctionnement */
 
 .symbol{
    border: 1px solid white;
    border-radius: 50%;
    background-color: #9356DC;
    padding: 3px 7px;
-   
    margin-left: -40px;
 }
 
@@ -203,27 +161,20 @@ header img{
 
 button p{
    color: white;
-   
 }
  button a{
    color: black;
    text-decoration: none;
-   
  }
 
  .fonctionnement , .Restaurants {
-
    padding: 20px 5%;
-  
 }
 
 .fonctionnement_btns{
-
    display:flex;
    flex-direction: column;
    gap: 20px;
-   
-  
 }
 
 
@@ -241,8 +192,6 @@ button p{
    gap:25px;
    align-items: center;
    padding-left: 30px;
-   
-   
 }
 
 button:hover i{
@@ -253,18 +202,16 @@ button:hover i{
    color:#7a7a7a;
 }
 
+
+                  /* Restaurants  */
+
+
 .Restaurants{ 
-   
    background-color:#F6F6F6;
-   
-   
    padding-bottom: 30px;
    padding-top: 30px;
    margin-top: 50px;
 }
-
-
-
 
 .restaurants-cards{
    display: flex;
@@ -284,7 +231,6 @@ button:hover i{
 }
 
 .icon2{
-
    display: flex;
    justify-content:flex-end; 
    margin-top: -20px;
@@ -293,7 +239,6 @@ button:hover i{
 }
    
 .icon2 :hover{
-
    background: linear-gradient(#9356DC,#FF79DA );
    font-weight: 700;
    background-clip: text;
@@ -302,11 +247,7 @@ button:hover i{
    transform: scale(1.1);
 }
 
-
-
-
 .rectangle-flex{
-
    display: flex;
    justify-content: flex-end;
    margin-right: 40px;
@@ -321,26 +262,14 @@ button:hover i{
    width:60px;
    background-color:#99E2D0;
    color: #008766;
-   padding:8px 8px 8px 8px;
-   
-   
-   
-
-   
-   
+   padding:8px 8px 8px 8px; 
 }
 
-   
-  
-
 .card{
-
-   
    height: 260px;
    border-radius: 15px;
    border: 1px solid #F6F6F6;
    background-color:#FFFFFF;
-   
 }
 
 .card img{
@@ -362,61 +291,12 @@ button:hover i{
 
 .card p{
    margin-top: -10px;
-   
    font-weight: 100;
 }
 
 .card h3{
-
   margin-top: 5px;
-  
 }
-
-footer{
-
-   background-color:#353535 ;
-   padding-left: 20px;
-   padding-bottom: 20px;
-   
-}
-
-footer a{
-   text-decoration: none;
-   color: white;
-}
-
-footer p{
-
-   color: white;
-}
-
-footer img{
-
-   filter: invert(1);
-   width: 80px;
-   padding-top: 20px;
-}
-
-.footer-icon{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   margin-bottom: -20px;
-   
-}
-
-footer i{
-   color:#fff;
-}
-
-.fa-utensils , .fa-handshake-angle{
-
-   margin-right: 10px;
-}
-
-
-
-
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
@@ -440,36 +320,27 @@ footer i{
    .fonctionnement > * , .Restaurants > *{
      max-width: 1440px;
      margin: 20px auto;
-     
    }
    
 
    .restaurants-cards{
       flex-direction: row;
-      
       flex-wrap: wrap;
       justify-content: space-between;
-      
-      
    }
 
    .restaurants-cards .card{
       width: 48%;
-
    }
 
    footer{
-      
       display: flex;
-      
       justify-content: flex-end;
    }
    
    footer{
       display: flex;
-      
       gap: 40px;
-      
    }
 
    footer img{
@@ -488,18 +359,13 @@ footer i{
    }
 
    footer{
-      
       display: flex;
-      
       justify-content: flex-end;
    }
    
    footer{
       display: flex;
-      
       gap: 30px;
-      
-      
    }
 
    footer img{
