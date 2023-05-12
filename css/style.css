@@ -129,7 +129,6 @@ header img{
 
 .button :hover {
    opacity: 0.8;
-   box-shadow: #353535;
    transform: scale(1.02);
 }
 
@@ -155,6 +154,7 @@ header img{
    background-color: #9356DC;
    padding: 3px 7px;
    margin-left: -40px;
+   color: white;
 }
 
 
